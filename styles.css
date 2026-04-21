@@ -8,12 +8,13 @@ body {
   font-family: Arial, sans-serif;
   display: grid;
   place-items: center;
-  background: #f5f5f5;
+  background: url("https://img.freepik.com/premium-psd/light-flowers-background-pink-tones_774208-495.jpg?semt=ais_hybrid&w=740")
+    center / cover no-repeat fixed;
 }
 
 .card {
   width: min(420px, 92%);
-  background: #fff;
+  background: rgba(255, 255, 255, 0.92);
   border: 1px solid #ddd;
   border-radius: 12px;
   padding: 20px;
