@@ -1,4 +1,4 @@
-﻿const express = require("express");
+const express = require("express");
 const fs = require("fs/promises");
 const path = require("path");
 
@@ -9,7 +9,8 @@ const DATA_DIR = path.join(__dirname, "data");
 const DATA_FILE = path.join(DATA_DIR, "responses.json");
 
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(__dirname));
+app.use('/node_modules', express.static(path.join(__dirname, 'node_modules')));
 
 async function ensureDataFile() {
   try {
